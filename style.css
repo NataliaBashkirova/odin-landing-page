@@ -2,6 +2,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header-ctr, .hero-ctr {
@@ -9,6 +10,7 @@
     display: flex;
     justify-content: center;
 }
+
 
 .info-ctr {
     display: flex;
@@ -35,14 +37,16 @@ ul {
     justify-content: space-between;
     gap: 25px;
 }
-.header, .hero, .information {
+.header, .hero, .information, .quote{
     display: flex;
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
     padding: 20px;
 }
 
 .hero {
     gap: 15px;
+    flex-wrap: wrap;
 }
 .header {
     gap: 40px;    
@@ -110,4 +114,41 @@ h1{
     font-style: italic;
     font-size: 18px;
     color: #1F2937;
+}
+
+.quote-ctr {
+    background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.quote {
+    flex-wrap: wrap;
+    /* padding: 100px 70px; */
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+.quote-text{
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    font-style: italic;
+    /* flex: 1 1 auto; */
+    display: flex;
+    flex-wrap: wrap;  
+
+}
+
+.quote-author {
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 18px;
+    flex-shrink: 1;
+    flex: 1 1 auto;
+
 }
