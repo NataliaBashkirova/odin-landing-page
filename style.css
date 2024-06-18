@@ -46,7 +46,6 @@ ul {
 
 .hero {
     gap: 15px;
-    flex-wrap: wrap;
 }
 .header {
     gap: 40px;    
