@@ -130,6 +130,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
     
 .quote-text{
@@ -155,12 +156,14 @@ h1{
 .action-ctr {
     display: flex;
     justify-content: center;
-}
-
-.action {
     background-color: #3882F6;
-    margin: 50px 0;
-    padding: 50px 100px;
+    margin: 100px 0;
+}
+    
+.action {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     border-radius: 6px;
     color: #F9FAF8;
     align-items: flex-end;
@@ -185,4 +188,15 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 900;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
 }
